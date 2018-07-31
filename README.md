@@ -18,7 +18,7 @@ Advantages of Abstraction
 
 # Difference between Abstraction and Encapsulation
 
-Abstraction	Encapsulation
+# Abstraction	Encapsulation
 Abstraction solves the issues at the design level.	Encapsulation solves it implementation level.
 Abstraction is about hiding unwanted details while showing most essential information.	Encapsulation means hiding the code and data into a single unit.
 
