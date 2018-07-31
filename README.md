@@ -1,26 +1,27 @@
 # How to achieve Abstraction?
 
 Abstraction is a process of hiding the implementation details and showing only functionality to the user. It only indicates important things to the user and hides the internal details, ie. While sending SMS, you just type the text and send the message. Here, you do not care about the internal processing of the message delivery. Abstraction can be achieved using Abstract Class and Abstract Method
-              $(".navbar-nav li a").click(function (e) {
-                   $("#HiddenFieldCategoryName").val($(this).text());
-                   var categoryName = $("#HiddenFieldCategoryName").val();
-                   if (categoryName.trim() === "Learning Center") {
-                       e.preventDefault();
-                       $("#DivLearningCenter").show();
-                       $("#overlay").show();
-                       $("#overlay").SetOverlayHeightWidth();
-                   }
-                   else {
-                       var i = ValidateSessionForFilterPage('FilterPage');
-                       if (i == 0) {
-                           e.preventDefault();
-                           $("#DivLogin").show();
-                           $("#overlay").show();
-                           $("#overlay").SetOverlayHeightWidth();
-                           $("#txtLoginEmail").focus();
-                       }
-                   }
-               });
+          private void BindVideo()
+            {
+                Registration registration = new Registration();
+                DataTable dt = new DataTable();
+                try
+                {
+                    dt = registration.GetGetHomePageVideo();
+                    if (!object.Equals(dt, null))
+                    {
+                        if (dt.Rows.Count > 0)
+                        {
+                            repeaterHomePageVideo.DataSource = dt;
+                            repeaterHomePageVideo.DataBind();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+            }
+
 Abstract Class - A class which is declared “abstract” is called as an abstract class. It can have abstract methods as well as concrete methods. A normal class cannot have abstract methods.
 
 Abstract Method - A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
