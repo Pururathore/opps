@@ -28,10 +28,10 @@ Abstraction allows focussing on what the information object must contain	Encapsu
 
 # Abstract Class	Interface
 No. | Abstract Class | Interface Class
-----|---------------|-----------------
-An abstract class can have both abstract and non-abstract methods. |	The interface can have only abstract methods.
-It does not support multiple inheritances. |	It supports multiple inheritances.
-It can provide the implementation of the interface. |	It can not provide the implementation of the abstract class.
-An abstract class can have protected and abstract public methods. |	An interface can have only have public abstract methods.
-An abstract class can have final, static, or static final variable with any access specifier. |	The interface can only have a public static final variable.
+----|----------------|-----------------
+1 | An abstract class can have both abstract and non-abstract methods. |	The interface can have only abstract methods.
+2 | It does not support multiple inheritances. |	It supports multiple inheritances.
+3 | It can provide the implementation of the interface. |	It can not provide the implementation of the abstract class.
+4 | An abstract class can have protected and abstract public methods. |	An interface can have only have public abstract methods.
+5 | An abstract class can have final, static, or static final variable with any access specifier. |	The interface can only have a public static final variable.
 
