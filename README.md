@@ -1,7 +1,26 @@
-How to achieve Abstraction?
+# How to achieve Abstraction?
 
 Abstraction is a process of hiding the implementation details and showing only functionality to the user. It only indicates important things to the user and hides the internal details, ie. While sending SMS, you just type the text and send the message. Here, you do not care about the internal processing of the message delivery. Abstraction can be achieved using Abstract Class and Abstract Method
-
+       $(".navbar-nav li a").click(function (e) {
+            $("#HiddenFieldCategoryName").val($(this).text());
+            var categoryName = $("#HiddenFieldCategoryName").val();
+            if (categoryName.trim() === "Learning Center") {
+                e.preventDefault();
+                $("#DivLearningCenter").show();
+                $("#overlay").show();
+                $("#overlay").SetOverlayHeightWidth();
+            }
+            else {
+                var i = ValidateSessionForFilterPage('FilterPage');
+                if (i == 0) {
+                    e.preventDefault();
+                    $("#DivLogin").show();
+                    $("#overlay").show();
+                    $("#overlay").SetOverlayHeightWidth();
+                    $("#txtLoginEmail").focus();
+                }
+            }
+        });
 Abstract Class - A class which is declared “abstract” is called as an abstract class. It can have abstract methods as well as concrete methods. A normal class cannot have abstract methods.
 
 Abstract Method - A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
@@ -14,7 +33,7 @@ Advantages of Abstraction
 4. The main benefit of using an abstract class is that it allows you to group several related classes as siblings.
 5. Abstraction helps to reduce the complexity of the design and implementation process of software.
 
-Difference between Abstraction and Encapsulation
+# Difference between Abstraction and Encapsulation
 
 Abstraction	Encapsulation
 Abstraction solves the issues at the design level.	Encapsulation solves it implementation level.
