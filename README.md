@@ -9,7 +9,7 @@ A class which is declared “abstract” is called as an abstract class. It can 
 A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
 
 # Rules of Abstract Method-
-1. Abstract methods do not have an implementation; it only has method signature
+~ 1. Abstract methods do not have an implementation; it only has method signature
 2. If a class is using an abstract method they must be declared abstract. The opposite cannot be true. This means that an abstract class does not necessarily have an abstract method.
 3. If a regular class extends an abstract class, then that class must implement all the abstract methods of the abstract parent
 Advantages of Abstraction
