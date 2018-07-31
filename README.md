@@ -1,32 +1,14 @@
 # How to achieve Abstraction?
 
 Abstraction is a process of hiding the implementation details and showing only functionality to the user. It only indicates important things to the user and hides the internal details, ie. While sending SMS, you just type the text and send the message. Here, you do not care about the internal processing of the message delivery. Abstraction can be achieved using Abstract Class and Abstract Method
-        
-                                          private void BindVideo()
-                                            {
-                                                Registration registration = new Registration();
-                                                DataTable dt = new DataTable();
-                                                try
-                                                {
-                                                    dt = registration.GetGetHomePageVideo();
-                                                    if (!object.Equals(dt, null))
-                                                    {
-                                                        if (dt.Rows.Count > 0)
-                                                        {
-                                                            repeaterHomePageVideo.DataSource = dt;
-                                                            repeaterHomePageVideo.DataBind();
-                                                        }
-                                                    }
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                }
-                                            }
-Abstract Class - A class which is declared “abstract” is called as an abstract class. It can have abstract methods as well as concrete methods. A normal class cannot have abstract methods.
 
-Abstract Method - A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
+# Abstract Class - 
+A class which is declared “abstract” is called as an abstract class. It can have abstract methods as well as concrete methods. A normal class cannot have abstract methods.
 
-Rules of Abstract Method-
+# Abstract Method - 
+A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
+
+# Rules of Abstract Method-
 1. Abstract methods do not have an implementation; it only has method signature
 2. If a class is using an abstract method they must be declared abstract. The opposite cannot be true. This means that an abstract class does not necessarily have an abstract method.
 3. If a regular class extends an abstract class, then that class must implement all the abstract methods of the abstract parent
@@ -42,9 +24,9 @@ Abstraction is about hiding unwanted details while showing most essential inform
 
 Abstraction allows focussing on what the information object must contain	Encapsulation means hiding the internal details or mechanics of how an object does something for security reasons.
 
-Difference between Abstract Class and Interface
+# Difference between Abstract Class and Interface
 
-Abstract Class	Interface
+# Abstract Class	Interface
 An abstract class can have both abstract and non-abstract methods.	The interface can have only abstract methods.
 It does not support multiple inheritances.	It supports multiple inheritances.
 It can provide the implementation of the interface.	It can not provide the implementation of the abstract class.
